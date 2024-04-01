@@ -1,0 +1,79 @@
+
+.filters {
+    background: rgb(255, 255, 255);
+    height: 70px;
+    width: 100%;
+    border: 1px solid #DDDDDD; /* added "solid" type */
+    border-radius: 4px;
+}
+
+/* styling the button */
+.filters button {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background-color: #FF5A5F;
+    height: 48px;
+    border-radius: 4px;
+    width: 20%;
+    float: right;
+    line-height: 48px; /* changed to line-height for vertical centering */
+    margin: 12px 30px;
+}
+
+/* change opacity to 90% when the mouse is on the button */
+.filters button:hover {
+    opacity: 0.9; /* changed to valid opacity value */
+}
+
+/* location and amenities */
+.location,
+.amenities {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 25%;
+}
+
+/* Location */
+.location {
+    border-right: 1px solid #DDDDDD;
+}
+
+/* location border */
+.filters .location:hover,
+.filters .amenities:hover {
+    background-color: #ffffff;
+}
+
+/* location and amenities popover */
+.filters .popover {
+    position: absolute;
+    border: 1px solid #ffffff;
+    z-index: 17; /* changed to valid integer value */
+    display:none;
+}
+.filters .location:hover .popover,
+.filters .amenities:hover .popover
+{
+    display:flex;
+}
+
+.filters h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.filters h3 {
+    font-weight: 600;
+    margin: 5px;
+}
+
+/* corrected typo in selector */
+.filters h4 {
+    font-size: 14px;
+    font-weight: 400;
+    height: 50%;
+    padding-left: 15px;
+}
+
