@@ -1,0 +1,48 @@
+.s {
+    background: rgb(255, 255, 255);
+    height: 70px;
+    width: 100%;
+    border: 1px #DDDDDD;
+    border-radius: 4px;
+}
+
+/*styling the button*/
+.filters button {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background-color: #FF5A5F;
+    height: 48px;
+    border-radius: 4px;
+    width: 20%;
+    float: right;
+    align-items: center;
+    margin: 12px 30px;
+}
+
+/*change opacity to 90% when the mouse is on the button*/
+button:hover {
+    opacity: 90%;
+}
+
+/*location and amenities*/
+.location,
+.amenities {
+    display: inline-block;
+    height: 100%;
+    width: 25%;
+
+}
+
+.location {
+    border-right: 1px solid #DDDDDD;
+}
+
+.location h3,
+.amenities h3 {
+    font-weight: 600;
+}
+
+.location h4,
+.amenities h4 {
+    font-size: 14px;
+}
